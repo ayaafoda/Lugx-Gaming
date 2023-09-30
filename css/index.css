@@ -378,7 +378,6 @@ header .container .links ul li a {
   content: "SEARCH NOW";
   position: absolute;
   width: fit-content;
-  height: 100%;
   background-color: var(--hoverColor);
   top: 25px;
   right: 0px;
