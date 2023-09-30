@@ -375,15 +375,15 @@ header .container .links ul li a {
 }
 
 .landing .container .content form:after {
-  content: "SEARCH NOW";
+content: "SEARCH NOW";
   position: absolute;
   width: fit-content;
-  height: 100%;
+  height: fit-content;
   background-color: var(--hoverColor);
   top: 25px;
   right: 0px;
-  padding: 15px 20px;
-  border-radius: 25px;
+  padding: 18px 20px;
+  border-radius: 40px;
   transition-duration: .3s;
   cursor: pointer;
 }
