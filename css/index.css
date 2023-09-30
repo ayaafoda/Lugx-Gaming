@@ -59,6 +59,7 @@ a {
   font-size: 15px;
   transition-duration: .3s;
 }
+
 .main .head a:hover {
   background-color: #0071f8;
 }
@@ -377,7 +378,7 @@ header .container .links ul li a {
   content: "SEARCH NOW";
   position: absolute;
   width: fit-content;
-  height: fit-content;
+  height: 100%;
   background-color: var(--hoverColor);
   top: 25px;
   right: 0px;
@@ -409,7 +410,6 @@ header .container .links ul li a {
 
 .landing .container .content form input::placeholder {
   font-size: 15px;
-  /* padding-left: 20px; */
 }
 
 .landing .img {
@@ -833,9 +833,10 @@ header .container .links ul li a {
 .shop .container {
   position: relative;
 }
+
 .shop .container:after {
   content: "";
-background-image: url(../images/cta-bg.jpg);
+  background-image: url(../images/cta-bg.jpg);
   max-width: 550px;
   max-height: 510px;
   width: 100%;
@@ -848,12 +849,14 @@ background-image: url(../images/cta-bg.jpg);
   top: 0;
   z-index: -1;
 }
+
 @media (max-width:990px) {
-  .shop .container:after{
+  .shop .container:after {
     display: none;
   }
 }
-.shop .container .main  {
+
+.shop .container .main {
   height: 100%;
   position: relative;
   z-index: 2;
@@ -868,11 +871,13 @@ background-image: url(../images/cta-bg.jpg);
     flex-direction: column;
   }
 }
+
 @media (max-width:425px) {
-  .shop .container .main{
+  .shop .container .main {
     display: block;
   }
-  }
+}
+
 .shop .container .main .text {
   background-color: #eee;
   border-radius: 20px;
@@ -880,7 +885,7 @@ background-image: url(../images/cta-bg.jpg);
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-padding: 60px;
+  padding: 60px;
   max-width: 350px;
   margin-top: 50px;
 }
@@ -890,11 +895,13 @@ padding: 60px;
     max-width: 250px;
   }
 }
+
 @media (max-width:990px) {
   .shop .container .main .text {
     max-width: 100%;
   }
 }
+
 .shop .container .main .text>span {
   color: var(--hoverColor);
   font-weight: 800;
@@ -906,19 +913,23 @@ padding: 60px;
   line-height: 1.3;
   max-width: 250px;
 }
+
 @media (max-width:990px) {
-  .shop .container .main .text h2{
+  .shop .container .main .text h2 {
     max-width: 100%;
   }
 }
+
 @media (max-width:425px) {
   .shop .container .main .text h2 {
     font-size: 24px;
   }
 }
-.shop .container .main .text.two h2  {
+
+.shop .container .main .text.two h2 {
   max-width: 100%;
 }
+
 .shop .container .main .text h2 span {
   color: #0071f8;
 }
@@ -957,79 +968,87 @@ padding: 60px;
   width: 100%;
   margin-top: 30px;
 }
-.shop .container .main .text  .inp form {
+
+.shop .container .main .text .inp form {
   max-width: 100%;
   width: 100%;
   position: relative;
 }
-.shop .container .main .text  .inp input {
+
+.shop .container .main .text .inp input {
   max-width: 100%;
-    width: calc(100% - 20px);
-    padding: 15px 0px 15px 0px;
-    padding-left: 20px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    border: none;
-    outline: none;
+  width: calc(100% - 20px);
+  padding: 15px 0px 15px 0px;
+  padding-left: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border: none;
+  outline: none;
 }
+
 .shop .container .main .text .inp input::placeholder {
   font-size: 15px;
 }
-.shop .container .main .text  .inp button {
-      position: absolute;
-      width: fit-content;
-      height: fit-content;
-      background-color: var(--hoverColor);
-      top: 0px;
-      right: 0px;
-      padding: 15px 20px;
-      border-radius: 25px;
-      transition-duration: .3s;
-      cursor: pointer;
-      color: #fff;
-      border: none;
-      text-transform: uppercase;
-      font-weight: 600;
+
+.shop .container .main .text .inp button {
+  position: absolute;
+  width: fit-content;
+  height: 100%;
+  background-color: var(--hoverColor);
+  top: 0px;
+  right: 0px;
+  padding: 15px 20px;
+  border-radius: 25px;
+  transition-duration: .3s;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
   font-size: 15px;
 }
+
 @media (max-width:768px) {
-.shop .container .main .text .inp button{
+  .shop .container .main .text .inp button {
     position: relative;
     width: 100%;
     margin-top: 15px;
   }
 }
+
 .shop .container .main .text button:hover {
   background-color: var(--mainColor);
 }
 
 footer {
   background-image: url(../images/page-heading-bg.jpg);
-    background-size: cover;
-    background-position: center bottom;
+  background-size: cover;
+  background-position: center bottom;
   border-top-right-radius: 155px;
   border-top-left-radius: 155px;
   min-height: 150px;
   margin-top: 150px;
-    display: flex;
-      align-items: center;
-      justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 footer .container {
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
   gap: 5px;
   flex-wrap: wrap;
   color: #fff;
   padding-top: 25px;
   font-size: 15px;
   text-align: center;
-    padding: 0px 30px 0 30px;
+  padding: 0px 30px 0 30px;
 }
+
 @media (max-width:320px) {
   footer .container {
     padding-top: 50px;
