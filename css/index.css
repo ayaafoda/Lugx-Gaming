@@ -375,15 +375,14 @@ header .container .links ul li a {
 }
 
 .landing .container .content form:after {
-content: "SEARCH NOW";
+  content: "SEARCH NOW";
   position: absolute;
   width: fit-content;
-  height: fit-content;
   background-color: var(--hoverColor);
   top: 25px;
   right: 0px;
-  padding: 18px 20px;
-  border-radius: 40px;
+  padding: 15px 20px;
+  border-radius: 25px;
   transition-duration: .3s;
   cursor: pointer;
 }
@@ -562,7 +561,6 @@ content: "SEARCH NOW";
   gap: 25px;
   margin-bottom: 100px;
 }
-
 .trending .main .items .item {
   background-color: #eee;
   border-radius: 30px;
@@ -571,8 +569,12 @@ content: "SEARCH NOW";
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
   position: relative;
+  height: 100%;
+  width: 100%;
 }
-
+.trending .main .items .item h3 {
+  color: black;
+}
 .trending .main .items .item:hover h3 {
   color: #0071f8;
 }
@@ -616,10 +618,10 @@ content: "SEARCH NOW";
 .trending .main .items .item .textt {
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   align-items: center;
 }
 
