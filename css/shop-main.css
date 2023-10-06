@@ -17,7 +17,9 @@ html {
 a {
   text-decoration: none;
 }
-
+ul {
+  list-style: none;
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -246,7 +248,7 @@ header .container .links ul li a {
   align-items: center;
   position: relative;
   z-index: 3;
-padding-top: 95px;
+padding-top: 65px;
   padding-bottom: 15px;
   border-bottom-left-radius: 155px;
   border-bottom-right-radius: 155px;
@@ -270,9 +272,225 @@ padding-top: 95px;
   font-size: 50px;
   margin-bottom: 10px;
       font-weight: 700;
+      text-align: center;
+}
+@media (max-width:320px) {
+  .landing .container .main h1 {
+    font-size: 35px;
+  }
 }
 .landing .container .main p {
   color: white;
       font-weight: 400;
       font-size: 15px;
 }
+
+/* Start items  */
+.games {
+  padding-top: 80px;
+}
+.games .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.games .nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.games .nav ul a {
+      background-color: #eee;
+      padding: 8px 14px;
+      color: black;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition-duration: .3s;
+}
+.games .nav ul a:hover {
+  color: var(--hoverColor);
+}
+.games .nav ul a:first-of-type {
+  background-color: var(--hoverColor);
+  color: #fff;
+}
+/* End items  */
+
+/* Start games */
+.games .main {
+  margin-top: 60px;
+}
+.games .main .items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 100px;
+}
+
+.games .main .items .item {
+  background-color: #eee;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.games .main .items .item h3 {
+  color: black;
+}
+.games .main .items .item:hover h3 {
+  color: #0071f8;
+}
+
+.games .main .items .item .price {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--mainColor);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.games .main .items .item .price del {
+  font-size: 13px;
+  margin-bottom: 1px;
+}
+
+.games .main .items .item .price span {
+  font-weight: 600;
+}
+
+.games .main .items .item img {
+  width: 100%;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.games .main .items .item .textt {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.games .main .items .item .text span {
+  color: #777;
+}
+
+.games .main .items .item .text h3 {
+  margin: 10px 0;
+  text-transform: capitalize;
+  font-size: 20px;
+  transition-duration: .3s;
+  font-weight: 700;
+}
+
+.games .main .items .item .textt i {
+  color: #fff;
+  background-color: var(--hoverColor);
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition-duration: .3s;
+}
+
+.games .main .items .item:hover i {
+  background-color: #0071f8;
+}
+.games .pages-num ul{
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+.games .pages-num ul a {
+  display: block;
+  padding: 10px 15px;
+    color: black;
+      transition-duration: .3s;
+      background-color: #eee;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      font-weight: 600;
+}
+.games .pages-num ul a:nth-of-type(3) {
+    background-color: #0071f8;
+      color: #fff;
+}
+.games .pages-num ul a:hover {
+  background-color: #0071f8;
+  color: #fff;
+}
+.games .pages-num ul a li i {
+  font-size: 11px;
+}
+/* End games */
+
+
+/* Start Footer */
+footer {
+  background-image: url(../images/page-heading-bg.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  border-top-right-radius: 155px;
+  border-top-left-radius: 155px;
+  min-height: 150px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  color: #fff;
+  padding-top: 25px;
+  font-size: 15px;
+  text-align: center;
+  padding: 0px 30px 0 30px;
+}
+
+@media (max-width:320px) {
+  footer .container {
+    padding-top: 50px;
+  }
+}
+/* End Footer */
