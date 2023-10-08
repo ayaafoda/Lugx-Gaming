@@ -299,6 +299,7 @@ header .container .links ul li a {
   .landing {
     height: fit-content;
     padding-bottom: 200px;
+    padding-top: 0;
   }
 }
 
