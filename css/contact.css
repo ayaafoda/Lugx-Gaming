@@ -163,7 +163,7 @@ header .container .links ul {
   }
 
   header .container .links:hover ul {
-    top: 50px;
+    top: 65px;
   }
 }
 
@@ -308,19 +308,12 @@ header .container .links ul li a {
       display: grid;
       flex-wrap: wrap;
       align-items: center;
-      /* justify-content: space-between; */
-      /* gap: 25px; */
       grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 
-@media (max-width:1200px) {
+@media (max-width:460px) {
   .contact .container .main {
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  }
-}
-@media (max-width:990px) {
-  .contact .container .main {
-    flex-direction: column;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
 
