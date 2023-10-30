@@ -406,6 +406,7 @@ header .container .links ul li a {
   border: none;
   outline: none;
   margin-top: 25px;
+    height: 18px;
 }
 
 .landing .container .content form input::placeholder {
